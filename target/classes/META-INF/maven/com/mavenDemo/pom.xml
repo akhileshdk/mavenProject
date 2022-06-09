@@ -50,12 +50,25 @@
 					<groupId>org.springframework</groupId>
 					<artifactId>spring-expression</artifactId>
 				</exclusion>
-				
+
 			</exclusions>
 		</dependency>
 
 
 	</dependencies>
+
+	<distributionManagement>
+		<repository>
+            <id>releases</id>
+            <name>Nexus Releases</name>
+            <url>http://localhost:8081/repository/maven-releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>Nexus Snapshots</name>
+            <url>http://localhost:8081/repository/maven-snapshots</url>
+        </snapshotRepository>
+	</distributionManagement>
 
 	<build>
 		<pluginManagement><!-- lock down plugins versions to avoid using Maven 
