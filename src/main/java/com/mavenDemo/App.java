@@ -27,7 +27,7 @@ public class App
     	System.out.println("10+20="+app.add(20, 10));
     	System.out.println("20-10="+app.subtract(20, 10));
     	System.out.println("20*10="+app.multiply(10, 20));
-    	
+    	System.out.println("20/10="+app.divide(20, 10));
     }
 }
 
